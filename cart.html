@@ -9,14 +9,196 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" href="img/titlog.png" type="image/icon type" />
 
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        html,
+        body {
+            background: url("img/background1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            box-sizing: border-box;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            scroll-behavior: smooth;
+        }
+
+        .blurCart {
+            border: solid px white;
+            padding-block: 10px;
+            padding-inline: 15px;
+            width: 100%;
+            max-width: 2000px;
+            margin: auto;
+            backdrop-filter: blur(980px);
+            height: 98vh;
+            border-radius: 30px;
+
+
+        }
+
+        .cartCont {
+            height: 55rem;
+            width: 100%;
+            border: 3px solid rgba(128, 128, 128, 0.205);
+            border-radius: 30px;
+            padding: 5rem;
+        }
+
+        .backbtn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .goBackHome {
+            background: grey;
+            margin: 2rem;
+            border: 4px solid rgba(128, 128, 128, 0.205);
+
+        }
+
+        .goBackHome:hover {
+            color: white;
+        }
+
+        .cartItems {
+            height: 45rem;
+        }
+
+        .productItems {
+            height: 44.5rem;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .productimg {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .productAmount {
+            width: 10rem;
+            height: 10rem;
+            margin: auto;
+
+        }
+
+        #productAmount {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            align-self: center;
+            margin-top: 4rem;
+
+        }
+
+        .order {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+
 </head>
 
 <body>
+    <div class="blurCart">
+        <div class="cartCont">
+            <h1 class="text-center mb-3">Your cart items:</h1>
+            <div class="cartItems d-flex">
 
-    <a href="index.html">go back Home</a>
+                <div class="col-3 productItems">
+                    <h4 class="text-center">Products:</h4>
+                    <div style="border: 2px solid white; width: 10rem; margin: auto;"></div>
+                    <div class="productAmount mt-4 text-light">
+                        <img src="./img/Products/blackswitch/1.png" alt="blackswitch" class="productimg mt-4">
+                    </div>
+
+                    <div class="productAmount mt-4 text-light">
+                        <img src="./img/Products/blueswitch/1.png" alt="blueswitch" class="productimg mt-4">
+                    </div>
+
+                    <div class="productAmount mt-4 text-light">
+                        <img src="./img/Products/redswitch/1.png" alt="redswitch" class="productimg mt-4">
+                    </div>
 
 
 
+
+                </div>
+
+                <div class="col-3 productItems">
+                    <h4 class="text-center">Quantity:</h4>
+                    <div style="border: 2px solid white; width: 10rem; margin: auto;"></div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">4</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">1</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">3</h3>
+                    </div>
+
+
+                </div>
+
+                <div class="col-3 productItems">
+                    <h4 class="text-center">Amount:</h4>
+                    <div style="border: 2px solid white; width: 10rem; margin: auto;"></div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">4,500</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">4,500</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">4,500</h3>
+                    </div>
+
+                </div>
+
+                <div class="col-3 productItems">
+                    <h4 class="text-center text-light">Total:</h4>
+                    <div style="border: 2px solid white; width: 10rem; margin: auto;"></div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">18, 000</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">4,500</h3>
+                    </div>
+                    <div class="productAmount mt-4 text-light">
+                        <h3 id="productAmount">13,500</h3>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="backbtn">
+                <button class="btn btn-outline-dark goBackHome"><a href="#"
+                        style="text-decoration: none; text-transform: none; color: black;">Complete Order</a></button>
+
+            </div>
+
+            <div class="backbtn">
+                <button class="btn btn-outline-dark goBackHome"><a href="index.html"
+                        style="text-decoration: none; text-transform: none; color: black;">Take Me
+                        Home</a></button>
+
+            </div>
+        </div>
+    </div>
 
 
 
