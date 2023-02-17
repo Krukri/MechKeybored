@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .bottombar__close {
   background: none;
   border: none;
@@ -23,9 +24,19 @@
   cursor: pointer;
   font-size: 2em;
 }
+
 /* .bottombar__content > * {
   display: flex;
   align-items: center;
 } */
 /* This will target the parent and the child element under the said class */
+.addToCart {
+  color: black;
+  border: 1px solid black;
 
+}
+
+.addToCart:hover {
+  background: rgb(29, 27, 27);
+  color: white;
+}
